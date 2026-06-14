@@ -15,9 +15,9 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Driftsend — Send files, anywhere" },
+      { title: "GhostShare — Send files, anywhere" },
       { name: "description", content: "Share files instantly over your local network or the global cloud. Set expiration and download limits." },
-      { property: "og:title", content: "Driftsend — Send files, anywhere" },
+      { property: "og:title", content: "GhostShare — Send files, anywhere" },
       { property: "og:description", content: "Share files instantly with expiring, limited-download links." },
     ],
   }),
