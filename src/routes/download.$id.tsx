@@ -55,7 +55,7 @@ function DownloadPage() {
       <header className="relative z-10 flex items-center justify-between px-6 sm:px-10 py-6 animate-fade-in">
         <Link to="/" className="flex items-center gap-2.5 font-semibold tracking-tight">
           <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-accent text-primary-foreground shadow-glow">
-            <Ghost className="h-4.5 w-4.5" strokeWidth={2.4} />
+            <Ghost className="h-[18px] w-[18px]" strokeWidth={2.4} />
           </span>
           <span>GhostShare</span>
         </Link>
