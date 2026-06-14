@@ -5,8 +5,8 @@ import { useState } from "react";
 export const Route = createFileRoute("/download/$id")({
   head: ({ params }) => ({
     meta: [
-      { title: `Download ${params.id} — Driftsend` },
-      { name: "description", content: "Download a file shared via Driftsend." },
+      { title: `Download ${params.id} — GhostShare` },
+      { name: "description", content: "Download a file shared via GhostShare." },
     ],
   }),
   component: DownloadPage,
@@ -52,7 +52,7 @@ function DownloadPage() {
           <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
             <Send className="h-4 w-4" />
           </span>
-          <span>Driftsend</span>
+          <span>GhostShare</span>
         </Link>
       </header>
 
