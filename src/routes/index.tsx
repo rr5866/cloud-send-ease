@@ -93,7 +93,7 @@ function Index() {
           <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
             <Send className="h-4 w-4" />
           </span>
-          <span>Driftsend</span>
+          <span>GhostShare</span>
         </Link>
         <span className="text-xs text-muted-foreground hidden sm:block">
           Frontend demo — connect to your Node + Multer + Cloudinary backend
