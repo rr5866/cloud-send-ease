@@ -11,6 +11,7 @@ import {
   CheckCircle2,
   XCircle,
   RotateCcw,
+  X,
 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
