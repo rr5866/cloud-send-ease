@@ -276,13 +276,23 @@ function DownloadPage() {
             )}
 
             {busy && (
-              <button
-                disabled
-                className="mt-7 w-full inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-primary/60 to-accent/60 px-5 py-3.5 text-sm font-semibold text-primary-foreground opacity-80 cursor-not-allowed"
-              >
-                <Loader2 className="h-4 w-4 animate-spin" />
-                {status === "preparing" ? "Preparing…" : "Downloading…"}
-              </button>
+              <div className="mt-7 flex gap-2">
+                <button
+                  disabled
+                  className="flex-1 inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-primary/60 to-accent/60 px-5 py-3.5 text-sm font-semibold text-primary-foreground opacity-80 cursor-not-allowed"
+                >
+                  <Loader2 className="h-4 w-4 animate-spin" />
+                  {status === "preparing" ? "Preparing…" : "Downloading…"}
+                </button>
+                <button
+                  onClick={cancel}
+                  className="inline-flex items-center justify-center gap-2 rounded-xl border border-border bg-white/[0.03] px-4 py-3.5 text-sm font-semibold text-foreground hover:bg-destructive/10 hover:text-destructive hover:border-destructive/40 transition"
+                  aria-label="Cancel download"
+                >
+                  <X className="h-4 w-4" />
+                  Cancel
+                </button>
+              </div>
             )}
 
             {status === "error" && (
