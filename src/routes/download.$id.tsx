@@ -106,6 +106,15 @@ function DownloadPage() {
     setError(null);
   };
 
+  const cancel = () => {
+    timers.current.forEach(clearTimeout);
+    timers.current = [];
+    setStatus("idle");
+    setProgress(0);
+    setError(null);
+    toast("Download canceled", { description: "The transfer was stopped." });
+  };
+
   const isLocal = meta.shareType === "local";
   const busy = status === "preparing" || status === "downloading";
   const transferred = Math.min(meta.size, Math.round((progress / 100) * meta.size));
